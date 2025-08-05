@@ -1,0 +1,76 @@
+---
+title: 'Genomic Prediction Pipeline with Transfer Learning'
+publishedAt: '2025-07-01'
+summary: 'Engineered a scalable genomic data pipeline using AWS cloud services and GANs, achieving 25% improvement in yield prediction accuracy across multiple regions.'
+---
+
+# Genomic Prediction Pipeline with Transfer Learning
+
+A comprehensive genomic data processing and prediction system built during my internship at [Syngenta](https://www.syngenta.com/), combining cloud infrastructure with advanced machine learning techniques for agricultural applications.
+
+## Overview
+
+This project involved designing and implementing a complete genomic prediction pipeline that processes datasets with over 1 million genetic markers to predict agricultural yields. The system leverages cloud computing, synthetic data generation, and transfer learning to achieve high accuracy across multiple geographical regions.
+
+## Key Features
+
+- **Cloud-Scale Processing**: Handles datasets with 1M+ genetic markers using AWS infrastructure
+- **Synthetic Data Generation**: Uses GANs to generate realistic genotype data for training enhancement
+- **Transfer Learning**: Implements region-specific models for improved prediction accuracy
+- **Multi-Region Support**: Optimized for Sweden, Spain, and US West regions
+- **CI/CD Integration**: Production-ready pipeline with GitLab integration
+
+## Technical Implementation
+
+### Cloud Architecture
+- **Data Storage**: AWS S3 for genomic data storage and versioning
+- **Data Warehouse**: AWS Redshift for large-scale data analytics
+- **ML Platform**: AWS SageMaker for model training and deployment
+- **ETL Pipeline**: Optimized extract, transform, load processes
+
+### Machine Learning Pipeline
+- **Data Augmentation**: GANs for synthetic genotype data generation
+- **Model Architecture**: CNN-LSTM hybrid models for sequence analysis
+- **Transfer Learning**: Region-specific fine-tuning for optimal performance
+- **Feature Engineering**: Advanced genomic marker processing
+
+## Key Achievements
+
+1. **Performance Optimization**: Reduced data preparation time by 40% for million-marker datasets
+2. **Accuracy Improvement**: Increased yield prediction accuracy by 25% across 3 regions
+3. **Stakeholder Collaboration**: Led development with 12 stakeholders across multiple teams
+4. **Reusability**: Created modular pipeline reused in 5+ agricultural projects
+5. **Production Deployment**: Delivered CI/CD-ready system using GitLab
+
+## Technologies Used
+
+- **Cloud Services**: AWS S3, Redshift, SageMaker
+- **Machine Learning**: PyTorch, TensorFlow, GANs, Transfer Learning
+- **Data Processing**: Python, Pandas, NumPy
+- **Pipeline**: CNN-LSTM models, ETL processes
+- **DevOps**: GitLab CI/CD, Docker containers
+- **Databases**: Redshift, S3 data lakes
+
+## Impact
+
+This genomic prediction pipeline significantly improved Syngenta's ability to predict crop yields across different geographical regions. The 25% accuracy improvement translates to better resource allocation, reduced waste, and more informed agricultural decisions.
+
+The system's modular design and cloud-native architecture enable it to scale with growing data volumes and support additional crop types and regions. The use of synthetic data generation helps overcome data scarcity issues common in genomic research.
+
+## Regional Performance
+
+- **Sweden**: Optimized for Nordic climate conditions
+- **Spain**: Adapted for Mediterranean agricultural patterns  
+- **US West**: Tailored for diverse Western US growing conditions
+
+The transfer learning approach allows the system to adapt quickly to new regions while leveraging knowledge from existing datasets, making it a valuable tool for global agricultural applications.
+
+## Future Enhancements
+
+The pipeline architecture supports future enhancements including:
+- Additional crop types and genetic markers
+- Real-time prediction capabilities
+- Integration with IoT agricultural sensors
+- Advanced ensemble methods for improved accuracy
+
+**Company:** [Syngenta](https://www.syngenta.com/) - Leading agricultural technology and seed company

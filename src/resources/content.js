@@ -1,0 +1,321 @@
+import { Logo } from "@once-ui-system/core";
+
+const person = {
+  firstName: "Chen",
+  lastName: "Zhu",
+  get name() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  role: "Machine Learning Engineer",
+  avatar: "/images/professional-headshot.jpg",
+  email: "chenzhu4@illinois.edu",
+  location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Chinese", "Spanish"], // optional: Leave the array empty if you don't want to display languages
+};
+
+const newsletter = {
+  display: true,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
+  description: (
+    <>
+      I write about machine learning, data science, and share insights on building scalable
+      AI systems and data pipelines.
+    </>
+  ),
+};
+
+const social = [
+  // Links are automatically displayed.
+  // Import new icons in /once-ui/icons.ts
+  {
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/lisperz",
+  },
+  {
+    name: "LinkedIn",
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/chen-zhu-lisper",
+  },
+  {
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/l1sperrr/",
+  },
+  {
+    name: "Email",
+    icon: "email",
+    link: `mailto:${person.email}`,
+  },
+];
+
+const home = {
+  path: "/",
+  image: "/images/og/home.jpg",
+  label: "Home",
+  title: `${person.name}'s Portfolio`,
+  description: `Portfolio website showcasing my work as a ${person.role}`,
+  headline: <>Building intelligent systems with data and machine learning</>,
+  featured: {
+    display: true,
+    title: <>Recent project: <strong className="ml-4">AI Video Processing System</strong></>,
+    href: "/work/ai-video-text-inpainting",
+  },
+  subline: (
+    <>
+      I&apos;m Chen, a Machine Learning Engineer with expertise in AI systems, data pipelines, and scalable backend development.
+      <br /> Currently pursuing MS in Information Management at UIUC, specializing in Data Science and Analytics.
+    </>
+  ),
+};
+
+const about = {
+  path: "/about",
+  label: "About",
+  title: `About – ${person.name}`,
+  description: `Meet ${person.name}, ${person.role} specializing in AI systems and data science`,
+  tableOfContent: {
+    display: true,
+    subItems: false,
+  },
+  avatar: {
+    display: true,
+  },
+  calendar: {
+    display: true,
+    link: "https://cal.com",
+  },
+  intro: {
+    display: true,
+    title: "Introduction",
+    description: (
+      <>
+        Chen is a Machine Learning Engineer with a passion for building intelligent systems that solve
+        real-world problems. With experience in AI video processing, genomic data analysis, and distributed
+        systems, he combines technical expertise with innovative problem-solving to create scalable solutions.
+      </>
+    ),
+  },
+  work: {
+    display: true, // set to false to hide this section
+    title: "Work Experience",
+    experiences: [
+      {
+        company: "MetaFrazo",
+        timeframe: "August 2025 - December 2025",
+        role: "Machine Learning Engineer",
+        location: "Bloomington, IL, USA",
+        url: "https://www.metafrazo.ai/",
+        achievements: [
+          <>
+            Built an AI-powered video text-inpainting service using FastAPI, Celery, and GhostCut API, achieving
+            92%+ text removal accuracy and reducing job runtime by 30% through parallel processing.
+          </>,
+          <>
+            Leveraged Redis and PostgreSQL to optimize an async video processing pipeline, boosting task throughput by
+            3.2x and reducing failure rates to 45% under load.
+          </>,
+          <>
+            Developed over 20+ RESTful APIs with JWT-based auth, tiered billing, and role-based access control, enabling
+            secure access for 500+ users across Free, Pro, and Enterprise plans.
+          </>,
+          <>
+            Automated containerized deployment pipelines using Docker, Shell scripts, improving service recovery latency
+            from 20s to under 8s.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/MetaFrazo.jpg",
+            alt: "MetaFrazo AI Video Processing",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Syngenta",
+        timeframe: "May 2025 - August 2025",
+        role: "Applied Data Science Intern",
+        location: "Durham, NC, USA",
+        url: "https://www.syngenta.com/",
+        achievements: [
+          <>
+            Engineered a Genomic Prediction Pipeline with an optimized ETL process using AWS S3, Redshift, and
+            SageMaker, reducing preparation time by 40% for datasets with over 1 million markers.
+          </>,
+          <>
+            Leveraged GANs to generate synthetic genotype data and integrated it into a Transfer Learning-based
+            prediction pipeline, increasing yield prediction accuracy by 25% across 3 regions (SWE, Spain, US West).
+          </>,
+          <>
+            Led genomic tool development with 12 stakeholders, delivering a CI/CD-ready pipeline using GitLab and
+            CNN-LSTM models, reused in 5+ agricultural projects.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/Syngenta.jpg",
+            alt: "Syngenta Genomic Data Pipeline",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "China Telecom Co., Ltd.",
+        timeframe: "December 2023 - February 2024",
+        role: "Software Engineer Intern",
+        location: "Jiangxi, China",
+        achievements: [
+          <>
+            Participated in designing and implementing a Smart Tangerine system enabling residents to seamlessly dispose
+            tangerine stock. Supervise over 500k kilos Tangerine transactions.
+          </>,
+          <>
+            Deployed RabbitMQ latency queues with Spring Boot and Docker, reducing abandoned transaction rates by
+            20%.
+          </>,
+          <>
+            Integrated Elasticsearch for rapid indexing and Redis for efficient caching, resulting in a reduction of search
+            response times from 80ms to 30ms.
+          </>,
+          <>
+            Achieved 98% data accuracy and 99.8% payment success rate with Seata for distributed transaction control.
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
+  studies: {
+    display: true, // set to false to hide this section
+    title: "Studies",
+    institutions: [
+      {
+        name: "University of Illinois at Urbana-Champaign",
+        timeframe: "September 2024 - May 2026",
+        location: "Urbana, USA",
+        description: <>Master of Science in Information Management - Data Science and Analytics (GPA: 3.89/4.0)</>,
+      },
+      {
+        name: "Chongqing University of Posts and Telecommunications",
+        timeframe: "September 2020 - June 2024",
+        location: "Chongqing, China",
+        description: <>Bachelor of Engineering in Information Security (GPA: 3.47/4.0)</>,
+      },
+    ],
+  },
+  technical: {
+    display: true, // set to false to hide this section
+    title: "Technical Skills",
+    skills: [
+      {
+        title: "Programming Languages",
+        description: <>Proficient in Java, Python, Golang, C/C++, JavaScript, CUDA, and Shell scripting for diverse application development and system programming.</>,
+        images: [],
+      },
+      {
+        title: "Machine Learning & Data Systems",
+        description: <>Expert in PyTorch, TensorFlow, Transfer Learning, FastAPI, SageMaker for building and deploying ML models and data pipelines.</>,
+        images: [],
+      },
+      {
+        title: "Cloud & Infrastructure",
+        description: <>Experienced with AWS (S3, Redshift), Docker, Kubernetes, Git, CI/CD, and Nginx for scalable cloud-native applications.</>,
+        images: [],
+      },
+      {
+        title: "Databases & Frameworks", 
+        description: <>Skilled in MySQL, PostgreSQL, Redis, MongoDB, Kafka, Spring Boot, MyBatis, and RESTful APIs for full-stack development.</>,
+        images: [],
+      },
+    ],
+  },
+};
+
+const blog = {
+  path: "/blog",
+  label: "Blog",
+  title: "Writing about design and tech...",
+  description: `Read what ${person.name} has been up to recently`,
+  display: false, // Disable blog section
+  // Create new blog posts by adding a new .mdx file to app/blog/posts
+  // All posts will be listed on the /blog route
+};
+
+const work = {
+  path: "/work",
+  label: "Work",
+  title: `Projects – ${person.name}`,
+  description: `Machine Learning and Software Engineering projects by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/work/projects
+  // All projects will be listed on the /home and /work routes
+};
+
+const gallery = {
+  path: "/gallery",
+  label: "Gallery",
+  title: `Photo gallery – ${person.name}`,
+  description: `A photo collection by ${person.name}`,
+  images: [
+    {
+      src: "/images/gallery/UIUC.jpg",
+      alt: "UIUC Campus",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/DukeChapel.jpg",
+      alt: "Duke Chapel",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Ischool1.jpg",
+      alt: "Information School",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Music2.jpg",
+      alt: "Music 2",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/DukeChapel2.jpg",
+      alt: "Duke Chapel 2",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/UIUC2.jpg",
+      alt: "UIUC Campus 2",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Ischool2.jpg",
+      alt: "Information School 2",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Music.jpg",
+      alt: "Music",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/photo2.jpg",
+      alt: "Photo 2",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/photo3.jpg",
+      alt: "Photo 3",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/EnoRiverPark.jpg",
+      alt: "Eno River Park",
+      orientation: "vertical",
+    },
+  ],
+};
+
+export { person, social, newsletter, home, about, blog, work, gallery };

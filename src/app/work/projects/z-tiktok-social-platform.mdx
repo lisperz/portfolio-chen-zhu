@@ -1,0 +1,100 @@
+---
+title: 'Z-TikTok: Scalable Social Media Platform'
+publishedAt: '2023-06-01'
+summary: 'Built a high-performance TikTok-inspired social platform supporting 20,000+ DAUs with microservices architecture and distributed systems.'
+---
+
+# Z-TikTok: Scalable Social Media Platform
+
+A comprehensive social media platform inspired by TikTok, built from the ground up using modern microservices architecture and distributed systems principles.
+
+## Overview
+
+Z-TikTok is a full-featured social media platform that supports video sharing, real-time chat, user interactions, and scalable backend services. The project demonstrates expertise in building high-performance, distributed systems capable of handling thousands of concurrent users.
+
+## Key Features
+
+- **Video Platform**: Complete video upload, processing, and streaming capabilities
+- **Real-time Chat**: Instant messaging with chat features
+- **User Management**: Comprehensive user profiles and authentication
+- **Social Features**: Like, comment, follow, and content discovery
+- **Scalable Architecture**: Microservices-based design for horizontal scaling
+
+## Technical Implementation
+
+### Backend Architecture
+- **Framework**: Go with high-performance HTTP servers
+- **Database**: MySQL for relational data, Redis for caching and sessions
+- **Message Queue**: NSQ for distributed messaging
+- **Search Engine**: Consul for service discovery
+- **Logging**: Jaeger for distributed tracing
+
+### Infrastructure & Deployment
+- **Containerization**: Docker for service isolation
+- **Data Storage**: Scalable file storage for video content
+- **Caching Strategy**: Multi-layer caching with Redis and MinIO
+- **Load Balancing**: Distributed traffic management
+
+## Performance Metrics
+
+- **Daily Active Users**: 20,000+ DAUs supported
+- **Concurrent Users**: Optimized for high concurrency
+- **Server Load**: 20% decrease during peak traffic through RPC optimization
+- **Data Processing**: Efficient handling of video uploads and streaming
+- **Response Time**: Optimized for real-time user interactions
+
+## Key Achievements
+
+1. **High Scalability**: Successfully deployed functional TikTok backend supporting 20,000+ DAUs
+2. **Performance Optimization**: Deployed RPC services in clustered environment with Consul load balancing
+3. **System Reliability**: Achieved 20% decrease in server load during peak traffic
+4. **Microservices Design**: Implemented scalable, maintainable service architecture
+5. **Technology Integration**: Seamlessly integrated multiple technologies for optimal performance
+
+## Technologies Used
+
+- **Backend**: Go (Golang)
+- **Databases**: MySQL, Redis, NSQ
+- **Storage**: MinIO for object storage
+- **Service Discovery**: Consul
+- **Containerization**: Docker
+- **Monitoring**: Jaeger for distributed tracing
+- **Architecture**: Microservices, RPC
+
+## System Architecture
+
+### Microservices Components
+- **User Service**: Authentication and user management
+- **Video Service**: Video upload, processing, and streaming
+- **Chat Service**: Real-time messaging functionality
+- **Social Service**: Follow, like, comment interactions
+- **API Gateway**: Request routing and load balancing
+
+### Data Flow
+1. **Content Upload**: Videos processed and stored in MinIO clusters
+2. **User Authentication**: JWT-based auth with Redis session management
+3. **Real-time Features**: NSQ messaging for instant notifications
+4. **Data Caching**: Multi-tier caching strategy for optimal performance
+
+## Scalability Features
+
+- **Horizontal Scaling**: Microservices can be scaled independently
+- **Load Distribution**: Consul-based service discovery and load balancing
+- **Data Partitioning**: Efficient data distribution across multiple nodes
+- **Caching Strategy**: Intelligent caching reduces database load
+- **Asynchronous Processing**: Non-blocking operations for better performance
+
+## Impact
+
+This project demonstrates the ability to build production-ready, large-scale social media platforms using modern distributed systems principles. The architecture supports rapid user growth and provides a solid foundation for additional features.
+
+The 20,000+ DAU capacity showcases the system's ability to handle real-world traffic loads while maintaining performance and reliability. The modular design allows for easy feature additions and system maintenance.
+
+## Future Enhancements
+
+The platform architecture supports future enhancements including:
+- AI-powered content recommendation algorithms
+- Advanced video processing and filters
+- Live streaming capabilities
+- Enhanced analytics and monitoring
+- Mobile application development
