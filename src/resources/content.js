@@ -102,7 +102,7 @@ const about = {
     experiences: [
       {
         company: "MetaFrazo",
-        timeframe: "August 2025 - December 2025",
+        timeframe: "August 2025 - Present",
         role: "Machine Learning Engineer",
         location: "Bloomington, IL, USA",
         url: "https://www.metafrazo.ai/",
