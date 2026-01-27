@@ -1,12 +1,12 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Chen",
-  lastName: "Zhu",
+  firstName: "Evan",
+  lastName: "Z.",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Machine Learning Engineer",
+  role: "",
   avatar: "/images/professional-headshot.jpg",
   email: "chenzhu4@illinois.edu",
   location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -54,8 +54,8 @@ const home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building intelligent systems with data and machine learning</>,
+  description: `Portfolio website showcasing my work as a Software Engineer`,
+  headline: <>Building scalable video processing and backend systems</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">AI Video Processing System</strong></>,
@@ -63,8 +63,8 @@ const home = {
   },
   subline: (
     <>
-      I&apos;m Chen, a Machine Learning Engineer with expertise in AI systems, data pipelines, and scalable backend development.
-      <br /> Currently pursuing MS in Information Management at UIUC, specializing in Data Science and Analytics.
+      I&apos;m Evan, a Software Engineer with 4 years+ experience in building and optimizing video processing and playback systems.
+      <br /> Currently pursuing MS in Computer Information Science at UIUC.
     </>
   ),
 };
@@ -73,7 +73,7 @@ const about = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} specializing in AI systems and data science`,
+  description: `Meet ${person.name}, Software Engineer specializing in video processing and backend systems`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -90,9 +90,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Chen is a Machine Learning Engineer with a passion for building intelligent systems that solve
-        real-world problems. With experience in AI video processing, genomic data analysis, and distributed
-        systems, he combines technical expertise with innovative problem-solving to create scalable solutions.
+        Software engineer with 4 years+ experience in building and optimizing video processing and playback systems using FastAPI, React, TypeScript, SpringBoot, AWS, and Kubernetes. Architected backend pipelines handling 2,000+ daily video files and developed over 35 RESTful APIs to ensure reliable streaming and real-time updates. Skilled in containerized deployments, cloud services, and collaborative problem-solving.
       </>
     ),
   },
@@ -101,27 +99,44 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Phraze",
+        timeframe: "December 2025 - Present",
+        role: "Software Engineer",
+        location: "Champaign, IL, USA",
+        achievements: [
+          <>
+            Architected backend systems with FastAPI and PostgreSQL, handling 2,000+ video streaming files daily, optimizing backend performance and reducing latency by 25%.
+          </>,
+          <>
+            Designed and maintained 35+ RESTful APIs with JWT auth and role-based access control, managing 1,000+ jobs weekly, and using Redis for real-time updates and task management.
+          </>,
+          <>
+            Developed front-end components using React and TypeScript, integrating web technologies for seamless video job processing and status tracking.
+          </>,
+          <>
+            Scaled services with Kubernetes and deployed via AWS Beanstalk, reducing recovery time from 20s to 8s, with Prometheus for system monitoring.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "MetaFrazo",
-        timeframe: "August 2025 - Present",
-        role: "Machine Learning Engineer",
+        timeframe: "August 2025 - December 2025",
+        role: "Machine Learning Engineer - Full Stack Development",
         location: "Bloomington, IL, USA",
         url: "https://www.metafrazo.ai/",
         achievements: [
           <>
-            Built an AI-powered video text-inpainting service using FastAPI, Celery, and GhostCut API, achieving
-            92%+ text removal accuracy and reducing job runtime by 30% through parallel processing.
+            Deployed computer vision models for automated video text removal, leveraging Python and GhostCut API and achieving 93% accuracy across 10,000+ videos, utilizing PyTorch for fine-tuning performance.
           </>,
           <>
-            Leveraged Redis and PostgreSQL to optimize an async video processing pipeline, boosting task throughput by
-            3.2x and reducing failure rates to 45% under load.
+            Integrated Sync so lip-sync technology into video streaming workflows, synchronizing speech and facial movements in 1,000+ videos using deep learning frameworks to enhance multilingual content.
           </>,
           <>
-            Developed over 20+ RESTful APIs with JWT-based auth, tiered billing, and role-based access control, enabling
-            secure access for 500+ users across Free, Pro, and Enterprise plans.
+            Optimized ML inference pipelines by leveraging FastAPI and Celery, cutting processing time by 40%, and implemented containerized solutions with Docker for streamlined deployment.
           </>,
           <>
-            Automated containerized deployment pipelines using Docker, Shell scripts, improving service recovery latency
-            from 20s to under 8s.
+            Utilized AWS S3 to store large-scale video assets, enabling sub-second retrieval for over 10,000 videos and supporting scalable cloud-based processing pipelines.
           </>,
         ],
         images: [
@@ -197,7 +212,7 @@ const about = {
         name: "University of Illinois at Urbana-Champaign",
         timeframe: "September 2024 - May 2026",
         location: "Urbana, USA",
-        description: <>Master of Science in Information Management - Data Science and Analytics (GPA: 3.89/4.0)</>,
+        description: <>Master of Science in Computer Information Science (GPA: 3.92/4.0)</>,
       },
       {
         name: "Chongqing University of Posts and Telecommunications",
