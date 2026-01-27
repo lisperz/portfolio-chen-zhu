@@ -55,7 +55,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a Software Engineer`,
-  headline: <>Building scalable video processing and backend systems</>,
+  headline: <>Building scalable systems and delivering impactful solutions</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">AI Video Processing System</strong></>,
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I&apos;m Evan, a Software Engineer with 4 years+ experience in building and optimizing video processing and playback systems.
+      I&apos;m Evan, a Software Engineer with 4 years+ experience in full-stack development, distributed systems, and cloud infrastructure.
       <br /> Currently pursuing MS in Computer Information Science at UIUC.
     </>
   ),
@@ -73,7 +73,7 @@ const about = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, Software Engineer specializing in video processing and backend systems`,
+  description: `Meet ${person.name}, Software Engineer specializing in full-stack development and distributed systems`,
   tableOfContent: {
     display: true,
     subItems: false,
