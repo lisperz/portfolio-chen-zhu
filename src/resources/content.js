@@ -90,7 +90,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Software engineer with 4 years+ experience in building and optimizing video processing and playback systems using FastAPI, React, TypeScript, SpringBoot, AWS, and Kubernetes. Architected backend pipelines handling 2,000+ daily video files and developed over 35 RESTful APIs to ensure reliable streaming and real-time updates. Skilled in containerized deployments, cloud services, and collaborative problem-solving.
+        Software engineer with 4 years+ experience in building and optimizing scalable web services and distributed systems using FastAPI, React, TypeScript, SpringBoot, AWS, and Kubernetes. Architected backend pipelines handling high-throughput workloads and developed over 35 RESTful APIs to ensure reliable performance and real-time updates. Skilled in containerized deployments, cloud services, and collaborative problem-solving.
       </>
     ),
   },
