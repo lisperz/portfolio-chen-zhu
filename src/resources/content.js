@@ -210,13 +210,13 @@ const about = {
     institutions: [
       {
         name: "University of Illinois at Urbana-Champaign",
-        timeframe: "September 2024 - May 2026",
+        timeframe: "September 2024",
         location: "Urbana, USA",
         description: <>Master of Science in Computer Information Science (GPA: 3.92/4.0)</>,
       },
       {
         name: "Chongqing University of Posts and Telecommunications",
-        timeframe: "September 2020 - June 2024",
+        timeframe: "September 2020",
         location: "Chongqing, China",
         description: <>Bachelor of Engineering in Information Security (GPA: 3.47/4.0)</>,
       },
