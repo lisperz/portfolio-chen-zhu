@@ -10,7 +10,7 @@ const person = {
   avatar: "/images/professional-headshot.jpg",
   email: "chenzhu4@illinois.edu",
   location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Chinese", "Spanish"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Chinese", "Spanish", "French"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -115,6 +115,27 @@ const about = {
           </>,
           <>
             Scaled services with Kubernetes and deployed via AWS Beanstalk, reducing recovery time from 20s to 8s, with Prometheus for system monitoring.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "UIUC · DREAM Lab",
+        timeframe: "December 2025 - Present",
+        role: "Research Software Engineer",
+        location: "Urbana, IL, USA",
+        achievements: [
+          <>
+            Architected SCTA, an agentic workflow engine orchestrating 5 LLM agents with structured, auditable artifacts for traceable, debuggable target discovery.
+          </>,
+          <>
+            Built a tool-constrained agent runtime (Tool Box; per-agent scoped tools; no runtime tool creation), enforcing safe, deterministic execution boundaries.
+          </>,
+          <>
+            Implemented resilient execution on OpenAI/Azure with failure detection + Debugger Agent retries, enabling auto-recovery from runtime/tool/format errors and graceful abort on retry budget.
+          </>,
+          <>
+            Developed an experiment runner + evaluation harness (R=10 runs/dataset), improving robustness to ~60% cross-run consistency and delivering up to 4× stronger enrichment signals.
           </>,
         ],
         images: [],
