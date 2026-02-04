@@ -90,7 +90,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Software engineer with 4 years+ experience in building and optimizing scalable web services and distributed systems using FastAPI, React, TypeScript, SpringBoot, AWS, and Kubernetes. Architected backend pipelines handling high-throughput workloads and developed over 35 RESTful APIs to ensure reliable performance and real-time updates. Skilled in containerized deployments, cloud services, and collaborative problem-solving.
+        Software engineer with 4 years+ experience in building and optimizing scalable web services and distributed systems.
       </>
     ),
   },
@@ -103,20 +103,7 @@ const about = {
         timeframe: "December 2025 - Present",
         role: "Software Engineer",
         location: "Champaign, IL, USA",
-        achievements: [
-          <>
-            Architected backend systems with FastAPI and PostgreSQL, handling 2,000+ video streaming files daily, optimizing backend performance and reducing latency by 25%.
-          </>,
-          <>
-            Designed and maintained 35+ RESTful APIs with JWT auth and role-based access control, managing 1,000+ jobs weekly, and using Redis for real-time updates and task management.
-          </>,
-          <>
-            Developed front-end components using React and TypeScript, integrating web technologies for seamless video job processing and status tracking.
-          </>,
-          <>
-            Scaled services with Kubernetes and deployed via AWS Beanstalk, reducing recovery time from 20s to 8s, with Prometheus for system monitoring.
-          </>,
-        ],
+        achievements: [],
         images: [],
       },
       {
@@ -124,20 +111,7 @@ const about = {
         timeframe: "December 2025 - Present",
         role: "Research Software Engineer",
         location: "Urbana, IL, USA",
-        achievements: [
-          <>
-            Architected SCTA, an agentic workflow engine orchestrating 5 LLM agents with structured, auditable artifacts for traceable, debuggable target discovery.
-          </>,
-          <>
-            Built a tool-constrained agent runtime (Tool Box; per-agent scoped tools; no runtime tool creation), enforcing safe, deterministic execution boundaries.
-          </>,
-          <>
-            Implemented resilient execution on OpenAI/Azure with failure detection + Debugger Agent retries, enabling auto-recovery from runtime/tool/format errors and graceful abort on retry budget.
-          </>,
-          <>
-            Developed an experiment runner + evaluation harness (R=10 runs/dataset), improving robustness to ~60% cross-run consistency and delivering up to 4× stronger enrichment signals.
-          </>,
-        ],
+        achievements: [],
         images: [],
       },
       {
@@ -146,20 +120,7 @@ const about = {
         role: "Machine Learning Engineer - Full Stack Development",
         location: "Bloomington, IL, USA",
         url: "https://www.metafrazo.ai/",
-        achievements: [
-          <>
-            Deployed computer vision models for automated video text removal, leveraging Python and GhostCut API and achieving 93% accuracy across 10,000+ videos, utilizing PyTorch for fine-tuning performance.
-          </>,
-          <>
-            Integrated Sync so lip-sync technology into video streaming workflows, synchronizing speech and facial movements in 1,000+ videos using deep learning frameworks to enhance multilingual content.
-          </>,
-          <>
-            Optimized ML inference pipelines by leveraging FastAPI and Celery, cutting processing time by 40%, and implemented containerized solutions with Docker for streamlined deployment.
-          </>,
-          <>
-            Utilized AWS S3 to store large-scale video assets, enabling sub-second retrieval for over 10,000 videos and supporting scalable cloud-based processing pipelines.
-          </>,
-        ],
+        achievements: [],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
@@ -176,20 +137,7 @@ const about = {
         role: "Applied Data Science Intern",
         location: "Durham, NC, USA",
         url: "https://www.syngenta.com/",
-        achievements: [
-          <>
-            Engineered a Genomic Prediction Pipeline with an optimized ETL process using AWS S3, Redshift, and
-            SageMaker, reducing preparation time by 40% for datasets with over 1 million markers.
-          </>,
-          <>
-            Leveraged GANs to generate synthetic genotype data and integrated it into a Transfer Learning-based
-            prediction pipeline, increasing yield prediction accuracy by 25% across 3 regions (SWE, Spain, US West).
-          </>,
-          <>
-            Led genomic tool development with 12 stakeholders, delivering a CI/CD-ready pipeline using GitLab and
-            CNN-LSTM models, reused in 5+ agricultural projects.
-          </>,
-        ],
+        achievements: [],
         images: [
           {
             src: "/images/Syngenta.jpg",
@@ -204,23 +152,7 @@ const about = {
         timeframe: "December 2023 - February 2024",
         role: "Software Engineer Intern",
         location: "Jiangxi, China",
-        achievements: [
-          <>
-            Participated in designing and implementing a Smart Tangerine system enabling residents to seamlessly dispose
-            tangerine stock. Supervise over 500k kilos Tangerine transactions.
-          </>,
-          <>
-            Deployed RabbitMQ latency queues with Spring Boot and Docker, reducing abandoned transaction rates by
-            20%.
-          </>,
-          <>
-            Integrated Elasticsearch for rapid indexing and Redis for efficient caching, resulting in a reduction of search
-            response times from 80ms to 30ms.
-          </>,
-          <>
-            Achieved 98% data accuracy and 99.8% payment success rate with Seata for distributed transaction control.
-          </>,
-        ],
+        achievements: [],
         images: [],
       },
     ],
